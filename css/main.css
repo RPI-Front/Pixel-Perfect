@@ -109,10 +109,11 @@ section {
     width: 1394px;
     margin-top: 179px;
     height: 238px;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    padding: 0 182px;
+    padding: 0 133px;
+    overflow: hidden;
 }
 
 .v-carousel-container {
@@ -143,6 +144,10 @@ section {
 .v-carousel-content {
     text-align: center;
     width: 1030px;
+}
+
+.v-carousel-content-active {
+    opacity: 1;
 }
 
 .v-carousel-content h2 {
