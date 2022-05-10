@@ -106,13 +106,13 @@ section {
 }
 
 .v-carousel {
-    width: 1394px;
+    width: 1030px;
     margin-top: 179px;
     height: 238px;
-    display: block;
-    justify-content: center;
+    display: flex;
+    justify-content: right;
     align-items: center;
-    padding: 0 133px;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -143,11 +143,22 @@ section {
 
 .v-carousel-content {
     text-align: center;
-    width: 1030px;
+    min-width: 1030px;
 }
 
 .v-carousel-content-active {
-    opacity: 1;
+    order: 1;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        height: 150px;
+    }
+    to {
+        height: 100%;
+    }
 }
 
 .v-carousel-content h2 {
