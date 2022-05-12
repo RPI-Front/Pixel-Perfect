@@ -106,13 +106,21 @@ section {
 }
 
 .v-carousel {
-    width: 1394px;
+    width: 1030px;
     margin-top: 179px;
     height: 238px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0 182px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.v-carousel-rightable {
+    justify-content: right;
+}
+
+.v-carousel-leftable {
+    justify-content: left;
 }
 
 .v-carousel-container {
@@ -141,8 +149,39 @@ section {
 }
 
 .v-carousel-content {
+    order: 2;
     text-align: center;
-    width: 1030px;
+    min-width: 1030px;
+}
+
+.v-carousel-content-active-goRight {
+    order: 3;
+    animation-duration: 0.5s;
+    animation-name: slide-left;
+}
+
+.v-carousel-content-active-goLeft {
+    order: 1;
+    animation-duration: 0.5s;
+    animation-name: slide-right;
+}
+
+@keyframes slide-left {
+    from {
+        margin-right: -1030px;
+    }
+    to {
+        margin-right: 0px;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -1030px;
+    }
+    to {
+        margin-left: 0px;
+    }
 }
 
 .v-carousel-content h2 {
