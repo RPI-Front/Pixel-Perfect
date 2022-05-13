@@ -615,10 +615,6 @@ section {
     background-color: #e0e0e0;
 }
 
-.s-scroll-box:nth-child(2) {
-    background-color: #ff0036;
-}
-
 .s-slide.s-features {
     height: 986px;
     background-color: #ffffff;
