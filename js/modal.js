@@ -39,16 +39,19 @@ function _createModal() {
 
 	const input_name = document.createElement('input')
 	input_name.setAttribute('type', 'text')
+	input_name.setAttribute('placeholder', 'Name')
 	input_name.id = 'k-in-name'
 	modal_body.appendChild(input_name)
 
 	const input_email = document.createElement('input')
 	input_email.setAttribute('type', 'email')
+	input_email.setAttribute('placeholder', 'Email')
 	input_email.id = 'k-in-email'
 	modal_body.appendChild(input_email)
 
 	const input_phone = document.createElement('input')
 	input_phone.setAttribute('type', 'tel')
+	input_phone.setAttribute('placeholder', 'Phone')
 	input_phone.id = 'k-in-phone'
 	modal_body.appendChild(input_phone)
 	// Modal body
